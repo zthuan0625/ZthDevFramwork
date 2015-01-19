@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="libs/gson-2.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/mframework.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/android-support-v4.jar" sourcepath="/Users/mac/Documents/adt-bundle-mac/sdk/extras/android/support/v4/src"/>
+	<classpathentry exported="true" kind="lib" path="libs/alipay.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Core-2.3.11.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-SinaWeibo-2.3.11.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-TencentWeibo-2.3.11.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Wechat-Core-2.3.11.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Wechat-Moments-2.3.11.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

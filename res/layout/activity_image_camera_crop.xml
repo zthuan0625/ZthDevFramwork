@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="#000000" >
+
+        <org.apache.cordova.CordovaWebView
+            android:id="@+id/filter_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <com.zthdev.custom.view.CropImageView
+            android:id="@+id/cropimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        android:background="#2e2d2d" >
+
+        <Button
+            android:id="@+id/crop_ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="裁切"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/filter_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/filter_gaoliang"
+                android:text="高亮"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/filter_heibai"
+                android:text="黑白"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/filter_jiaodian"
+                android:text="焦点"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/filter_lao"
+                android:text="老照片"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#212121"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/crop_btn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/ra_crop_bg"
+                android:gravity="bottom|center_horizontal"
+                android:onClick="radiobottomClick"
+                android:paddingTop="8dp" />
+
+            <RadioButton
+                android:id="@+id/filter_btn"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:drawableTop="@drawable/ra_filter_bg"
+                android:gravity="center"
+                android:onClick="radiobottomClick"
+                android:paddingTop="8dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>图片美化</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+      <script src="js/alloyimage.js"></script>
+      <script src="js/main2.js"></script>
+
+      <script type="text/javascript">
+          function doFilter(text)
+          {
+              var label = document.getElementById("fitlerName");
+              label.innerHTML = text;
+              var img = document.getElementById("pic");
+              img.click();
+              alert("OK");
+          }
+          
+          function setImg(baseStr)
+          {
+              var img = document.getElementById("pic");
+              img.src = baseStr;
+              alert("OK:" + baseStr);
+          }
+      </script>
+  </head>
+  
+  <body style="background:#000000">
+  <div class="container-fluid" style="position: relative;">
+     <div>
+      <img src="img/big.jpg" class="pic" id="pic" alt="" draggable="false" style="width: 100%;
+  height: auto;max-height: 600px"/>
+      <label id="fitlerName" style="visibility:hidden">仿lomo</label>
+      <input type="button" onclick="doFilter('美肤')" value="点我"/>
+      <input type="button" id="save" class="save" value="保存">
+     </div>
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
